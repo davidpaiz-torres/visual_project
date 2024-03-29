@@ -1,6 +1,12 @@
 body{
-    background-color: floralwhite;
-}
+    background-color: whitesmoke;
+   
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
 .vid {
     max-width: 600px;
     margin: 0 auto;
@@ -12,26 +18,32 @@ body{
     width: 100%;
     height: auto;
 }
+.hed_dek h1{
+text-align:center;
+font-size:40px;
+}
+
+
 .hed_dek{
 text-align:center;
 }
   
-.article{
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-}
 
 .graf_1, .graf_2, .graf_3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; /* Align items in the center horizontally */
+
 }
 
 .graf_1 p, .graf_2 p, .graf_3 p {
   max-width: 650px; /* Adjust the maximum width as needed */
   margin: 1em 0; /* Add margin for vertical spacing between paragraphs */
 }
+
+footer {
+    max-width: fit-content; /* Set max-width to fit the content */
+    margin: 0 auto; /* Center the footer horizontally */
+}
+
