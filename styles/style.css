@@ -37,7 +37,7 @@ text-align:center;
   margin: 1em 0; /* Add margin for vertical spacing between paragraphs */
 }
 
-.slide {
+.scene {
   position: relative; /* Change position to relative */
   width: 100%; /* Ensure images occupy full width of their container */
 }
@@ -51,6 +51,24 @@ text-align:center;
 .container h1{
 text-align: center;
 }
+
+.active {
+  position: sticky;
+  top: 0;
+}
+
+.text-overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity (fourth value) as needed */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 5px; 
+  color: white; /* Set text color to contrast with the background */
+  position: relative; /* Position the text container relative to its parent */
+  bottom: 20px; /* Adjust the distance from the bottom */
+  left: 50%; /* Align the left edge of the text container to the center */
+  transform: translateX(-50%); 
+  max-width: calc(100% - 40px); 
+}
+
 
 img {
   max-width: 100%; /* Set maximum width to prevent images from overflowing */
@@ -77,4 +95,8 @@ h2 {
 footer {
     max-width: fit-content; /* Set max-width to fit the content */
     margin: 0 auto; /* Center the footer horizontally */
+}
+
+@media screen {
+  
 }
