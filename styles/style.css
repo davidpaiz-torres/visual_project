@@ -39,7 +39,7 @@ text-align:center;
 
 .scene {
   position: relative; /* Change position to relative */
-  width: 100%; /* Ensure images occupy full width of their container */
+  max-width: 100%; /* Ensure images occupy full width of their container */
 }
 
 .container {
@@ -72,7 +72,7 @@ text-align: center;
 
 img {
   max-width: 100%; /* Set maximum width to prevent images from overflowing */
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
   display: block; /* Ensure images behave as block elements */
   margin: auto; /* Center images horizontally */
 }
@@ -97,6 +97,36 @@ footer {
     margin: 0 auto; /* Center the footer horizontally */
 }
 
-@media screen {
-  
-}
+@media only screen and (max-width: 430px) and (max-height: 932px) and (orientation: portrait) {
+  .active {
+    position: sticky;
+    top: 0;
+  }
+
+     .text-overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 5px;
+      color: white;
+      position: relative;
+      z-index: 1;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: calc(100% - 40px);
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      height: 300px;
+      overflow-x: auto;
+      width: auto;
+  }
+  }
+
