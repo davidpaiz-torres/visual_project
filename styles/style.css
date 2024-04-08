@@ -37,10 +37,6 @@ text-align:center;
   margin: 1em 0; /* Add margin for vertical spacing between paragraphs */
 }
 
-.scene {
-  position: relative; /* Change position to relative */
-  max-width: 100%; /* Ensure images occupy full width of their container */
-}
 
 .container {
   position: relative;
@@ -101,12 +97,10 @@ footer {
  position:sticky;
   transition:0s;
   display: block !important; /* Show active scene */
-  position: sticky;
   top: 0;
 }
 
 
-    
 
   @media only screen and (max-width: 600px) and (orientation: portrait) {
     .scene {
