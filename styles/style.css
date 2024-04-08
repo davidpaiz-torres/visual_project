@@ -109,6 +109,8 @@ footer {
        display: block !important; 
        position: sticky;
        top: 0;
+       max-width: 100%;
+       height:auto;
      }
     .container {
       display: flex;
