@@ -96,7 +96,7 @@ footer {
 .scene {
  position:sticky;
   transition:0s;
-  display: block !important; /* Show active scene */
+  display: block !important;
   top: 0;
 }
 
@@ -106,7 +106,7 @@ footer {
     .scene {
       position:sticky;
        transition:0s;
-       display: block !important; /* Show active scene */
+       display: block !important; 
        position: sticky;
        top: 0;
      }
@@ -118,7 +118,7 @@ footer {
       width: auto;
     }
     .active {
-      display: block !important; /* Show active scene */
+      display: block !important;   /* !important makes it so any previous display properties for this class are hereby overwritten */
       position: sticky;
       top: 0;
     }
